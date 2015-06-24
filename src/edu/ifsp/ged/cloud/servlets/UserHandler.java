@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.JSONException;
 
 import edu.ifsp.ged.commons.facade.DBFacade;
-import edu.ifsp.ged.commons.models.UserModel;
+import edu.ifsp.ged.commons.models.User;
 
 /**
  * Servlet implementation class UserHandler
@@ -44,7 +44,7 @@ public class UserHandler extends HttpServlet {
 			//getting the message from servlet parameters
 			String message = request.getParameter("m");			
 			//user object
-			UserModel newUser = new UserModel();
+			User newUser = new User();
 			//Dserializando o json e armagenando no objeto
 			newUser.deserializeFromJson(message);
 			//database facade

@@ -1,6 +1,7 @@
 package edu.ifsp.ged.cloud.servlets;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -33,7 +34,10 @@ public class GovernmentHandler extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		String CNPJ = request.getParameter("CNPJ");
+		String captcha = request.getParameter("captcha");
+		
+		
 	}
 
 }

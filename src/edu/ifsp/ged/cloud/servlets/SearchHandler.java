@@ -26,7 +26,7 @@ public class SearchHandler extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String jsonMessage = request.getParameter("m");
+//		String jsonMessage = request.getParameter("m");
 	}
 
 	/**
